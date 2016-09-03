@@ -5,7 +5,7 @@ These scripts unmount a particular volume during logout. They are based on [laun
 ### Setup Steps
 1. Save the `unmount.sh` file in `/Library/Scripts/` directory and type this command in terminal: `chmod a+z /Library/Scripts/unmount.sh`.
 2. Copy the `com.example.unmount.plist` file to `/Library/LaunchAgents/` directory.
-3. Type `launchctl loal /Library/LaunchAgents/com.example.unmount.plist` to load the config file. To verify it has loaded, type `launchctl list`.
+3. Type `launchctl load /Library/LaunchAgents/com.example.unmount.plist` to load the config file. To verify it has loaded, type `launchctl list`.
 
 ### Debugging
 These files output logs to the `/var/log/` directory.
