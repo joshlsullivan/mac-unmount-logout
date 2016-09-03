@@ -1,8 +1,8 @@
 #!/bin/sh
 onLogout() {
-    echo 'Logging out' >> /Users/joshsullivan/logs/logout.sh.log
+    echo 'Logging out' >> /var/log/logout.sh.log
     echo Unmounting directory
-    diskutil unmount /Volumes/MIS\ Munki
+    diskutil unmount /Volumes/name_of_volume
     exit
 }
 
